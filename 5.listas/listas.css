@@ -19,6 +19,9 @@ p.titulo {
 	background-color: #F9DDC3;
 	color: #6E431C;
 }
+p.titulo::first-letter{
+	font-weight: bold;
+}
 
 #otraasignatura {
 	background-color: #CEA885;
@@ -27,7 +30,10 @@ p.titulo {
 	height: 1.5em;
 	vertical-align: middle;
 }
-{ /* Hay que conseguir que este estilo se aplique al posicionarse sobre el elemento con contenido LMSGI */
+a:hover{
 	font-weight: bold;
 	color: #FFF;
+}
+ul{
+	list-style-type: circle;
 }
