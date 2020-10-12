@@ -12,21 +12,35 @@
 			
 		}
 		.cabecera th{
-			background-color: white;
+			background: #F5F5F5 url(imagenes/fondo_gris.gif) repeat-x;
+
 		}
-		th{
-			background-color: rgb(196, 223, 218);
+		
+		.euro{	
+ 			 background: url(imagenes/euro.png) no-repeat left top;
 		}
-			/* la imagen de la moneda va con un backgroug url por cada moneda*/
-			/*falta backgroud de la primera fila, el gris*/
+		.dolar{	
+ 			 background: url(imagenes/dolar.png) no-repeat left top;
+		}
+		.yen{	
+ 			 background: url(imagenes/yen.png) no-repeat left top;
+		}
+		.libra{	
+ 			 background: url(imagenes/libra.png) no-repeat left top;
+		}
+		
+		.moneda{
+			background-color: #E6F3FF ;
+		}
+			
 		
 		tr{
 			height: 2cm;
 			vertical-align:bottom;
 			text-align: center;
 		}
-		.par:first-child{/*esto deberia ser un hover*/
-			background-color: yellow;
+		tr:hover td{
+			background: #FFFF66;
 		}
 		.par{/* ha de colorear los pares, con number of type*/
 			background-color: wheat;
@@ -46,28 +60,28 @@
 		</thead>
 		<tbody>
 			<tr class="par">
-				<th scope="row" class="euro">Euro/Dolar</th>
+				<th scope="row" class="moneda euro">Euro/Dolar</th>
 				<td>1.2524</td>
 				<td>1.2527</td>
 				<td>1.2539</td>
 				<td>1.2488</td>
 			</tr>
 			<tr>
-				<th scope="row" class="dolar">Dolar/Yen</th>
+				<th scope="row" class="moneda dolar">Dolar/Yen</th>
 				<td>119.01</td>
 				<td>119.05</td>
 				<td>119.82</td>
 				<td>119.82</td>
 			</tr>
 			<tr class="par">
-				<th scope="row" class="libra">Libra/Dolar</th>
+				<th scope="row" class="moneda libra">Libra/Dolar</th>
 				<td>1.8606</td>
 				<td>1.8611</td>
 				<td>1.8651</td>
 				<td>1.8522</td>
 			</tr>
 			<tr>
-				<th scope="row" class="yen">Yen/Euro</th>
+				<th scope="row" class="moneda yen">Yen/Euro</th>
 				<td>0.6711</td>
 				<td>0.6705</td>
 				<td>0.6676</td>
