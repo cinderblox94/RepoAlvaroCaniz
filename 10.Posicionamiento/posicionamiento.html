@@ -4,10 +4,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Posicionamiento</title>
 	<style>
+		html{
+			width: 100%;
+			height: 100%;
+		}
 		body{
 			font-size: 14px;
+			
 		}		
 		p:first-of-type{
+			position:absolute;
+			padding-left: 85%;
 			text-align: right;
 		}	
 		div.estandar{
@@ -16,27 +23,38 @@
 			padding: 3px;
 		}
 		div#posicionamiento1{
-			/* Añadir propiedades de posicionamiento */
+			position: absolute;
+			margin-top: 50%;
 			width: 100%; 
 			height: 1px; 
 			border-top: 1px dashed #CCCCCC ;
 		}
 		div#posicionamiento2{
-			/* Añadir propiedades de posicionamiento */
+			position: absolute;
+			margin-left: 50%;
 			width: 1px;
 			height: 100%;
 			border-left: 1px dashed #CCCCCC;
 		}
 		div#posicionamiento3{
-			/* Añadir propiedades de posicionamiento */		 
+			position: absolute;
+			margin-top: 0px;
+			margin-left: 0px;	 
 			border: 2px solid blue; 			
 		}
-		div#posicionamiento4{
-			/* Añadir propiedades de posicionamiento */		
+		div#posicionamiento4{/*no sale?*/
+			/* Añadir propiedades de posicionamiento */	
+			position:absolute;
+			margin-top: 100%;
+			margin-bottom: 0px;
+			margin-left: 0px;	
 			border: 2px solid green; 			
 		}
 		div#posicionamiento5{
 			/* Añadir propiedades de posicionamiento */
+			position: absolute;
+			margin-top: 50%;
+			margin-left: 50%;
 			border: 2px solid red;			
 		}
 		div#posicionamiento6{
