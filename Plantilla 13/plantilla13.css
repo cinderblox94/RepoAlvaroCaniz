@@ -33,6 +33,7 @@ body{
     margin-left: 100px;
     margin-right: 100px;
     min-height: 100vh;
+
 }
 #portada{
     position: relative;
@@ -96,22 +97,19 @@ hr{
     margin-bottom: 100px;
 }
 #cuadricula{
-    display: inline-block;
     width: 100%;
     height: 600px;
 }
 .marco{
-    margin: 0px;
-    width: 33%;
+    width: 33.33%;
     height: 50%;
     float: left;
-    padding: 2px;
 }
 .cuadrado{
-    margin: 0px;
     min-height: 100%;
     text-align: center;
     background-color:#eaebef;
+    border: 2px solid white;
 }  
 .icono{
     width: 64px;
