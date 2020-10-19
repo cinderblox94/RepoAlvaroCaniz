@@ -5,6 +5,7 @@
 
 #estatico{
 	position: static;
+	z-index: 2;
 	background-color:#606;
 	color: #ffc;
 	padding: var(--espacio);
@@ -14,6 +15,7 @@
 
 #absoluto1{
 	position: absolute;
+	z-index: 1;
 	width: var(--ancho); 
 	padding: var(--espacio); 
 	background-color: #066; 
@@ -24,7 +26,8 @@
 }
 
 #relativo{
-	position: relative; 
+	position: relative;
+	z-index: 0; 
 	width: var(--ancho); 
 	padding: var(--espacio); 
 	background-color: #033; 
@@ -43,7 +46,9 @@
 	left: 30px;
 }
 
-#relativo2{ /*Falta posicionamiento */
+#relativo2{ 
+	position: relative;
+	left: 15rem;
 	width: var(--ancho); 
 	height: 100px; 
 	padding: var(--espacio); 
@@ -53,7 +58,8 @@
 	
 }
 
-#relativo2 div{ /*Falta posicionamiento */
+#relativo2 div{ 
+	position: absolute;
 	width: var(--ancho); 
 	padding: var(--espacio); 
 	background-color: #111; 
