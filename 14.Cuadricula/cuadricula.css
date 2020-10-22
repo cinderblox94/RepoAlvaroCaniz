@@ -1,0 +1,29 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+#cuadricula{
+    border: 1px solid black;
+    margin: auto;
+    width: 80%;
+    height: 700px;
+}
+
+.caja{
+    margin: 1%;
+    border: 1px solid black;
+    float: left;
+    width: 31%;
+    height: 30%;
+}
+.caja:nth-child(4), .caja:nth-child(5), .caja:nth-child(6){
+    background-color: green;
+}
+.caja:nth-child(7), .caja:nth-child(8), .caja:nth-child(9){
+    background-color: blue;
+}
+.caja:nth-child(2n){
+    visibility: hidden;
+}
