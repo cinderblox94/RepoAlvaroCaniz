@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cabecera</title>
+    <style>
+        html{
+            min-height: 100%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+        }
+        body{
+            min-height: 100%;
+        }
+        #cabecera{
+            height: 10%;
+            position: relative;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #3f9822;
+            border-radius: 10px;
+            
+        }
+        #texto{
+            position: relative;
+            left: 1rem;
+            
+        }
+        p{
+            font-size: 2rem;
+            font-family: inherit;
+            margin-bottom: 0;
+            
+        }
+        a{  
+            font-family: inherit;  
+                    
+        }
+        ul{
+            position: absolute;
+            list-style-type: none;
+            display:flex;
+            right: 0.5rem;
+            bottom: 0;
+            margin: 0;
+        }
+        li{
+            float: right;
+            background-color: white;
+            margin: 1px;
+            border-radius: 5px;
+            padding: 0 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="cabecera">
+        <div id="texto">
+            <p>Información sobre educación en:</p>
+            <a>www.educacion.gob.es</a>
+        </div>
+        <ul class="menu">
+            <li>Inicio</li>
+            <li>Información</li>
+            <li>Cursos</li>
+            <li>Alumnos</li>
+            <li>Ayuda</li>
+        </ul>
+    </div>
+</body>
+</html>
