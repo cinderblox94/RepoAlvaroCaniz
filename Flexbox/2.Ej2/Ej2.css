@@ -1,0 +1,18 @@
+
+.contenedor{
+    background-color: cyan;
+    width: 60%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+.contenedor div{
+    background-color:darkorange;
+    color: white;
+    width: 40%;
+    margin: 0 2px;
+    text-align: center;
+    height: 25px;
+}

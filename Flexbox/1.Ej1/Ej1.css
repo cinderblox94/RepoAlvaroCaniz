@@ -1,0 +1,27 @@
+.primero{
+    background-color: cyan;
+    width: 60%;
+    height: 60px;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+    
+}
+.segundo{
+    background-color: cyan;
+    width: 60%;
+    height: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+.primero div, .segundo div{
+    background-color:darkorange;
+    color: white;
+    width: 40%;
+    margin: 0 2px;
+    text-align: center;
+    max-height: 20px;
+}
