@@ -1,0 +1,19 @@
+.contenedor{
+    background-color: blue;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content:space-between;
+    align-content: space-between;
+}
+.contenedor div{
+    width: 5rem;
+    height: 5rem;
+    background-color: cornflowerblue;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+    line-height: 5em;
+   
+}

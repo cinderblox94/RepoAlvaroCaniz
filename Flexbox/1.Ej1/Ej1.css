@@ -6,7 +6,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    justify-content: center;
+    justify-content: space-between;
+    
     
 }
 .segundo{
@@ -16,12 +17,12 @@
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+    justify-content: space-around;
 }
 .primero div, .segundo div{
     background-color:darkorange;
     color: white;
-    width: 40%;
-    margin: 0 2px;
+    width: 15%;    
     text-align: center;
     max-height: 20px;
 }
