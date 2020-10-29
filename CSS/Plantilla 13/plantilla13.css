@@ -4,13 +4,55 @@ html{
     font-family: sans-serif;/*buscar letra más parecida*/
 }
 body{
+    display: flex;
+    flex-direction: row;
     margin: 0;
-    min-height: 100vh;
+    height: 100vh;
     background-color: white;
 }
 
+#barraMenu{
+    position: static;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color:#212529 ;
+    width: 33em;
+    font-family: inherit;
+}
+#busqueda, #lista{
+    font-family: inherit;
+    color: white;
+}
+#lista ul{
+    padding: 0;
+    background-color:#24252d; 
+}
+#lista ul li:first-child{
+    border-top: 0;
+}
+#lista ul li{
+    border-top: solid 1px #1a1b20;
+    width: 80%;
+    margin-left: 2em;
+    list-style-type: none;
+    line-height: 4em;
+}
+#lista ul li:hover{
+    color: #525d9d;
+}
+a{
+   text-decoration: none; 
+   color: inherit;
+}
+#parteDerecha{
+    width: 100%;
+   
+}
 #cabecera{
-    position: relative;
+    position: sticky;
+    z-index: 1;
+    top: 0;
     width: 100%;
     height: 100px;
     background-color:#525d9d ;
@@ -24,8 +66,18 @@ body{
     font-family: inherit;
     margin-right: 100px;
     font-size: 36px;
-    
     font-weight: bold;
+}
+#menu{
+    position: absolute;
+    height: 4em;
+    width: 4em;
+    background-image: url(images/menu.png);
+    background-size: contain;
+    top:50%;
+    left:3em;
+    transform: translate(-50%,-2em);
+    
 }
 #contenedor{
     position: relative;
