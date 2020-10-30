@@ -1,37 +1,59 @@
 
 html{
-    min-height: 100vh;
+    min-height: 100%;
     font-family: sans-serif;/*buscar letra más parecida*/
 }
 body{
     display: flex;
     flex-direction: row;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     background-color: white;
 }
 
 #barraMenu{
-    position: static;
+    position:sticky;
     top: 0;
-    left: 0;
     height: 100%;
     background-color:#212529 ;
     width: 33em;
     font-family: inherit;
 }
-#busqueda, #lista{
+ #lista{
     font-family: inherit;
     color: white;
 }
+#busqueda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#2d2e39 ;
+    margin:0;
+    height: 6.5em;
+}
+#busqueda div{
+    color: #6b7073;
+    margin-left: 2em;    
+}
+#lupa{
+    margin-right: 2em;
+    background-image: url(images/lupa.png);
+    height: 1em;
+    width: 1em;
+    background-size: cover;
+}
 #lista ul{
-    padding: 0;
+    padding: 4em 0;
+    margin: 0;
     background-color:#24252d; 
+    
 }
 #lista ul li:first-child{
     border-top: 0;
 }
 #lista ul li{
+    display: flex;
+    align-items: center;
     border-top: solid 1px #1a1b20;
     width: 80%;
     margin-left: 2em;
@@ -45,38 +67,66 @@ a{
    text-decoration: none; 
    color: inherit;
 }
+.flecha{
+    margin-left: 6em;
+    background-image: url(images/flecha.png);
+    height: 2em;
+    width: 2em;
+    background-size: cover;
+}
+#freatured{
+    display: flex;
+    color: white;
+    font-family: inherit;
+   
+    margin-left: 2em;
+    margin-top: 2em;
+}
+#morados{
+    display: flex;
+}
+.icono{
+    height: 5px;
+    width: 5px;
+}
+.morado{
+    background-color: #535ba0;
+}
+.oscuro{
+    background-color: #2d2e39;
+}
 #parteDerecha{
     width: 100%;
-   
 }
 #cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     position: sticky;
     z-index: 1;
     top: 0;
     width: 100%;
-    height: 100px;
+    height: 6.5em;
     background-color:#525d9d ;
 }
 #cabecera p{
     position: absolute;
     margin-right: 15%;
     margin-left: 80%;
-    height: 100%;
     color: white;
     font-family: inherit;
-    margin-right: 100px;
+    margin-right: 6.5em;
     font-size: 36px;
     font-weight: bold;
 }
 #menu{
-    position: absolute;
-    height: 4em;
-    width: 4em;
+    
+    height: 2em;
+    width: 2em;
     background-image: url(images/menu.png);
     background-size: contain;
-    top:50%;
-    left:3em;
-    transform: translate(-50%,-2em);
+    margin-left:3em;
+    
     
 }
 #contenedor{
