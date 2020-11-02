@@ -7,7 +7,7 @@ body{
     display: flex;
     flex-direction: row;
     margin: 0;
-    height: 100%;
+    min-height: 100%;
     background-color: white;
 }
 
@@ -42,8 +42,9 @@ body{
     width: 1em;
     background-size: cover;
 }
+
 #lista ul{
-    padding: 4em 0;
+    padding: 3em 0;
     margin: 0;
     background-color:#24252d; 
     
@@ -76,18 +77,27 @@ a{
 }
 #freatured{
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     color: white;
     font-family: inherit;
-   
+    font-weight: 500;
     margin-left: 2em;
-    margin-top: 2em;
+    margin-right: 2em;
+    margin-top: 1em;
+    
 }
 #morados{
-    display: flex;
+    display: flex;  
+    justify-content: space-between;
+  
 }
 .icono{
-    height: 5px;
-    width: 5px;
+    margin: 0.2em;
+    max-width: 0.8em;
+    max-height: 0.8em;
+    
 }
 .morado{
     background-color: #535ba0;
@@ -95,11 +105,29 @@ a{
 .oscuro{
     background-color: #2d2e39;
 }
+#lineaFreatured{
+    width: 100%;
+    border:1px solid #2D2E39;
+    margin: 0;
+}
+#avion{
+    position: relative;
+    background-image: url(images/featured_post_01.jpg);
+    margin: 0 2em ;
+    height: 220px;
+    background-size: cover;
+}
+#frase{
+    font-family: inherit;
+    color:white;
+    margin:  1em 2em;
+}
 #parteDerecha{
     width: 100%;
 }
 #cabecera{
     display: flex;
+    flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
     position: sticky;
@@ -110,12 +138,10 @@ a{
     background-color:#525d9d ;
 }
 #cabecera p{
-    position: absolute;
-    margin-right: 15%;
-    margin-left: 80%;
+    
     color: white;
     font-family: inherit;
-    margin-right: 6.5em;
+    margin-right: 3em;
     font-size: 36px;
     font-weight: bold;
 }
@@ -131,10 +157,8 @@ a{
 }
 #contenedor{
     position: relative;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
-    min-height: 100vh;
+    margin: 6em 6em 0 6em;
+    min-height: 100%;
 
 }
 #portada{
@@ -146,9 +170,9 @@ a{
 }
 #presentacion{
     position: absolute;
-    margin: 50px;
-    width: 350px;
-    padding: 50px;
+    margin: 3em;
+    width: 22em;
+    padding: 3em;
     background-color: white;
 }
 #presentacion h4{
@@ -158,14 +182,12 @@ a{
     font-weight: bold;
     font-family: inherit;
     color: #31323a;
-    
 }
 em{
     color: #525d9d;
 }
 #presentacion h6{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin:1.25em 0 1.25em 0;
     font-size: 15px;
     color: #AAAAAA;
     font-weight: normal;
@@ -173,11 +195,10 @@ em{
 p{
     font-size: 14px;
     color: #7a7a7a;
-    line-height: 25px;
+    line-height: 1.5em;
 }
 .cubreBoton{
-    margin-top: 40px;
-    margin-bottom: 20px;
+    margin: 2.5em 0 1.5em 0;
 }
 .boton{
     border: 2px solid #525d9d;
@@ -199,32 +220,30 @@ hr{
     margin-bottom: 100px;
 }
 #cuadricula{
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
-    height: 600px;
+    height: 37.5em;
 }
-.marco{
-    width: 33.33%;
-    height: 50%;
-    float: left;
-}
+
 .cuadrado{
-    min-height: 100%;
+    height: 50%;
+    width: 30%;
     text-align: center;
     background-color:#eaebef;
     border: 2px solid white;
 }  
-.icono{
+.iconoCuadricula{
     width: 64px;
     height: 64px;
     display: inline-block;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin: 1.5em 0 ;
     background-size: cover;
     background-repeat: no-repeat;
 }
 .cuadrado p{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 .cuadrado p strong{
     color: #007bff;
@@ -238,45 +257,45 @@ hr{
     color: white;
     transition: all 0.4s;
 }
-.primero .icono{
+.primero .iconoCuadricula{
     background-image: url(images/icon_01.png);
 }
-.primero:hover .icono{
+.primero:hover .iconoCuadricula{
     background-image: url(images/icon_hover_01.png);
     transition: all 0.4s;
 }
-.segundo .icono{
+.segundo .iconoCuadricula{
     background-image: url(images/icon_02.png);
 }
-.segundo:hover .icono{
+.segundo:hover .iconoCuadricula{
     background-image: url(images/icon_hover_02.png);
     transition: all 0.4s;
 }
-.tercero .icono{
+.tercero .iconoCuadricula{
     background-image: url(images/icon_03.png);
 }
-.tercero:hover .icono{
+.tercero:hover .iconoCuadricula{
     background-image: url(images/icon_hover_03.png);
     transition: all 0.4s;
 }
-.cuarto .icono{
+.cuarto .iconoCuadricula{
     background-image: url(images/icon_04.png);
 }
-.cuarto:hover .icono{
+.cuarto:hover .iconoCuadricula{
     background-image: url(images/icon_hover_04.png);
     transition: all 0.4s;
 }
-.quinto .icono{
+.quinto .iconoCuadricula{
     background-image: url(images/icon_05.png);
 }
-.quinto:hover .icono{
+.quinto:hover .iciconoCuadriculaono{
     background-image: url(images/icon_hover_05.png);
     transition: all 0.4s;
 }
-.sexto .icono{
+.sexto .iconoCuadricula{
     background-image: url(images/icon_06.png);
 }
-.sexto:hover .icono{
+.sexto:hover .iconoCuadricula{
     background-image: url(images/icon_hover_06.png);
     transition: all 0.4s;
 }
