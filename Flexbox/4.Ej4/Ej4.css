@@ -1,0 +1,42 @@
+body{
+    background-color: cyan;
+}
+.contenedor{
+    background-color:gray;
+    width: 60%;
+    height: 60px;
+    margin-bottom: 0.1em;
+}
+.primero{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.primero div:nth-child(3){
+    display: flex;
+    align-self: flex-start;
+    justify-content: center;
+}
+.segundo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.segundo div:nth-child(3){
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+.tercero{/*no se que propiedad es*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.primero div, .segundo div, .tercero div{
+    background-color:darkorange;
+    color: white;
+    width: 15%;    
+    text-align: center;
+    max-height: 20px;
+}
