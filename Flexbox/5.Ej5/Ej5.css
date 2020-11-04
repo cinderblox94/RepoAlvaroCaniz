@@ -1,0 +1,48 @@
+#contenedor{
+    width: 90%;
+    height: 3em;
+    background-color: gray;
+    display: flex;
+    padding: 0.3em;
+    align-items: center;
+}
+#contenedor div{
+    padding: 0.5em;
+    background-color: khaki;
+    border: 1px solid black;
+}
+#primero{
+    order: 4;
+    flex-grow: 1;
+}
+#segundo{
+    flex-grow: 1;
+}
+#tercero{
+    flex-grow: 3;
+}
+#cuarto{
+    flex-grow: 4;
+}
+#contenedor2{
+    width: 90%;
+    height: 10em;
+    background-color: gray;
+    display: flex;
+    padding: 1em;
+    
+}
+#contenedor2 div{
+    background-color: khaki;
+    border: 1px solid black;
+    flex-basis: 1;
+}
+#primero2{
+    flex-grow: 1;
+}
+#segundo2{
+    flex-grow: 2;
+}
+#tercero2{
+    flex-grow: 1;
+}

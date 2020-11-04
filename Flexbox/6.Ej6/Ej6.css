@@ -1,0 +1,38 @@
+#contenedor{
+    width: 55em;
+    height: 3em;
+    background-color: gray;
+    display: flex;
+    padding: 0.3em;
+    align-items: center;
+}
+#contenedor div{
+    padding: 0.5em;
+    background-color: khaki;
+    border: 1px solid black;
+    flex-basis: 15em;
+    flex-shrink: 0;
+}
+#primero{
+    order: 3; 
+}
+#segundo{
+    order: 4;    
+}
+#contenedor2{
+    width: 55em;
+    height: 10em;
+    background-color: gray;
+    display: flex;
+    padding: 1em;
+    
+}
+#contenedor2 div{
+    background-color: khaki;
+    border: 1px solid black;
+    flex-basis: 25em;
+}
+
+#segundo2{
+    flex-shrink: 6;
+}
