@@ -1,9 +1,12 @@
 body{
 	margin: 0;
-	padding: 0;	
+  padding: 0;	
+  
 }
 
 div.container{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;	
   font-size: 16px;
   max-width: 1024px;  
@@ -30,8 +33,23 @@ div.container article {
 
 div.container aside {
   width: 30%;
+  height: fit-content;
   background-color: red;
   padding: 1em;
   font-size: 1em;
   box-sizing: border-box;
 }
+ @media all and (max-width:768px){
+  div.container article {
+    height: 25rem;
+    background-image: url(img/content-is-like-water-3.jpg);
+  }
+
+ }
+ @media all and (max-width:240px){
+  div.container article {
+    background-image: url(img/content-is-like-water-1.jpg);
+  }
+}
+
+  
