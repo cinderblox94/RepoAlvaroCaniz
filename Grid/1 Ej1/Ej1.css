@@ -1,0 +1,15 @@
+.grid{
+    display: grid;
+    height: 25rem;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr 2fr);
+    grid-auto-rows: 3fr;
+    grid-gap: 1rem;
+}
+.grid div{
+    background-color: gray;
+    border: 1px solid black;
+}
+.grid div:nth-of-type(even){
+    background-color: yellow;
+}
