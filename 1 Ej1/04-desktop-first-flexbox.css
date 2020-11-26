@@ -49,6 +49,11 @@ div.container aside {
  @media all and (max-width:240px){
   div.container article {
     background-image: url(img/content-is-like-water-1.jpg);
+    width: 100%;
+    height: 12rem;
+  }
+  div.container aside{
+    width: 100%;
   }
 }
 
