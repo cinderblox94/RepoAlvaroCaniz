@@ -1,0 +1,48 @@
+body{
+    margin:0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+header{
+    background-color: #BAF846;
+    width: 100%;
+}
+.cabecera{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    margin: 1rem;
+}
+.busqueda{
+    display: flex;
+    justify-content: flex-end;
+    background-color: white;
+    color: #707070;    
+    width: 50%;
+    margin: 1rem;
+}
+#form{
+    width: 100%;
+    text-align: right;
+}
+.usuario, .cesta{
+    background-color: #97C938;
+    border: 1px solid #FFFF66;
+    margin: 1rem;
+    padding: 1rem;
+}
+.usuario{
+ 
+    
+}
+.cesta{
+
+}
+.menu{
+    background-color: #97C938;
+    margin: 0;
+}
