@@ -16,15 +16,22 @@ header{
     position: sticky;
     z-index: 10;
     top:0;
+    padding: 0;
 }
 .cabecera{
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 75px;
+    width: 100%;
 }
 .logo{
     margin: 1rem;
+    background-image: url(img/logo.png);
+    height: 60px;
+    width: 200px;/*Modificado las medidas*/
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 form{
     display: flex;
@@ -44,13 +51,16 @@ form{
     border: 1px solid #FFFF66;
     margin: 1rem;
     padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
 }
-.usuario{
- 
-    
+.usuario img{
+    margin-right: 0.5rem;
 }
-.cesta{
-
+.cesta img{
+    margin-right: 0.5rem;
+   
 }
 .menu{
     background-color: #97C938;
@@ -125,6 +135,7 @@ aside{
     width: 80%;
     height: 160px;
     background-image: url(img/mapa.png);
+    background-repeat: no-repeat;
 }
 aside p{
     color: #707070;
@@ -132,7 +143,6 @@ aside p{
 }
 section{
     width: 80%;
-    
     padding-top: 2rem;
     box-sizing: border-box;
     display: flex;
@@ -195,34 +205,36 @@ section{
     background-color: #97C938;
 }
 .exposicion{
-    
     display: flex;
     flex-wrap: wrap;
 }
 .exposicion a{
     width: 100%;
+    margin: 1rem 0;
     color: #707070;
     font-weight: bold;
 }
-.exposicion>div{
-    
+.principal{
+    margin-bottom: 1rem;
+}
+.principal, .oculto{
     width: 100%;
-    height: fit-content;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-}
-.exposicion div a{
-    margin: 1rem 0;
     height: 150px;
-    width: 150px;
-    border: 1px solid #707070;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
 }
-.exposicion div a/*:nth-of-type() para poner la foto de cada producto*/{
+.oculto{
+    display: none;
+}
+.exposicion div div{ /*nth of type para personalizar cada uno*/  
     background-image: url(img/producto.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 0 1rem;
+}
+.mostrar:hover .oculto{/*esto debería mostrarlo*/
+    display: grid;
 }
 .exposicion .oculto{
     display: none;
@@ -233,6 +245,10 @@ section{
     background-color: #BAF846;
     color: white;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 .mostrar:active .oculto{/*al clicarlo debería mostrar la siguente fila*/
    display: flex;
@@ -248,14 +264,120 @@ footer{
 .logo2{
     width: 20%;
     box-sizing: border-box;
+    margin: 1em;
+    width: 220px;
+    height: 120px;
+    background-image: url(img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 .enlaces{
     width: 80%;
     box-sizing: border-box;
-    display: flex;
+    padding: 1em;
+    display: flex;   
+    justify-content: space-around;
 }
 .enlaces div{
+    display: flex;
+    flex-direction: column;
+}
+.enlaces a{
+    text-decoration: none;
+    color: black;
+    margin: 0.2rem;
+}
+.enlaces div a:first-child{
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+@media all and (max-width:1200px){
+    .principal, .oculto{
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat (2, 100%);
+        row-gap: 1rem;
+        height: 30rem;
+    }  
+    .flechaIzq, .flechaDrc{
+        font-size: 4rem;
+    }
+}
+@media all and (max-width:768px){
+  .cabecera{
+      flex-wrap: wrap;
+      height: fit-content;
+  }
+  .logo{
+    width: 150px;
+  }
+  .cabecera form{
+      order: 1;
+      background-color: #97C938;
+      height: 2rem;
+  }
+  #form{
+    width: 100%;
+    font-size: 0.7rem;
+    text-align: center;
+}
+  .usuario, .cesta{
+      margin: 0;
+  }
+  .menu{
+      height: fit-content;
+  }
+  .menu div{
+      flex-direction: column;
+      align-items: center;
+  }
+  .menu div div .nivel2{
+      z-index: 1;
+      width: 50%;
+      left:25%;      
+  }
+  .menu div div .nivel2 ul{
+    width: 100%;
+    margin: 0;
+}
+  .menu div div .nivel2 ul li{
+    width: 100%;
+  }
+  aside{
+      width: 100%;
+  }
+  aside p,aside br, .mapa{
+    display: none;
+  }
+  .lado{
+      height: fit-content;
+  }
+  section{
+      width: 100%;
+  }
+  .flechaDrc, .flechaIzq{
+      font-size: 3rem;
+  }
+    .principal, .oculto{
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    height: 60rem;
+    }
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo2{
+        margin-bottom: -1rem;
+    }
+    .enlaces{
+        flex-direction: column;
+    }
+    .enlaces div{
+        margin-bottom: 1rem;
+    }
     
 }
+
 
 
