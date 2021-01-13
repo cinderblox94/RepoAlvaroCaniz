@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej2</title>
+    <script>
+        var id;
+        function iniciar(){
+            var cuenta = document.querySelector('input').value;
+            contar(cuenta);
+        }
+
+        function contar(num){
+            for (var i = num; i>=0; i--){
+                
+                id = setInterval( () => 
+                    document.getElementById("contador").innerHTML = i , 1000);
+
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <form action="Ej2.html" method="get">
+        <p>Número de segundos  <input type="number" name="numero"></p>
+        <p id="contador">(Contador)</p>
+    </form>
+    <button onclick="iniciar()">Iniciar</button>
+    <button onclick="parar()">Parar</button>
+</body>
+</html>
