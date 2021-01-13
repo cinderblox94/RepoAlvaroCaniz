@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej1</title>
+    <script>
+        var myVar1, myvar2,myVar3,myVar4;
+
+        function animacion(){
+           
+           myVar1 = setTimeout(prim, 1000);
+           myVar2 = setTimeout(segun, 2000);
+           myVar3 = setTimeout(terc, 3000);
+           myVar4 = setTimeout(cuart, 4000);
+
+        }
+        //Cada función rellena y muestra su respectiva linea
+        function prim(){
+            document.getElementById("primero").innerHTML = "Primero";
+        }
+        function segun(){
+            document.getElementById("segundo").innerHTML = "Segundo";
+        }
+        function terc(){
+            document.getElementById("tercero").innerHTML = "Tercero";
+        }
+        function cuart(){
+            document.getElementById("cuarto").innerHTML = "Cuarto";
+        }
+
+        document.addEventListener("DOMContentLoaded", animacion);
+    </script>
+    <style>
+        div{
+            width: 30rem;
+        }
+        p{
+            margin-bottom: 1em;
+        }
+        #primero{
+            background-color: yellow;
+        }
+        #segundo{
+            background-color: purple;
+        }
+        #tercero{
+            background-color: orangered;
+        }
+        #cuarto{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Pincha en cuaquiera de los textos</h1>
+        <p id="primero"></p>
+        <p id="segundo"></p>
+        <p id="tercero"></p>
+        <p id="cuarto"></p>
+    </div>
+</body>
+</html>
