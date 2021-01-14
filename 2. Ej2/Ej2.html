@@ -7,20 +7,25 @@
     <script>
         var id;
         var tRestan;
+
         function iniciar(){
             var cuenta = document.querySelector('input').value;
+            var estilo = document.getElementById("contador");
+                estilo.style.color="black";
             contar(cuenta);
         }
 
         function contar(num){
             tRestan= num;
-            id = setInterval(imprimir, 1000);
+            id = setInterval(imprimir, 500);
         }
 
         function imprimir(){
+            
             if(tRestan > 0){
-                document.getElementById("contador").innerHTML = tRestan;
                 tRestan--;
+                document.getElementById("contador").innerHTML = tRestan;
+                
             }
             if(tRestan == 0){
                 document.getElementById("contador").innerHTML = 0;
