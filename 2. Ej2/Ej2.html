@@ -14,7 +14,7 @@
 
         function contar(num){
             tRestan= num;
-            id = setInterval(imprimir(), 1000);
+            id = setInterval(imprimir, 1000);
         }
 
         function imprimir(){
@@ -23,8 +23,9 @@
                 tRestan--;
             }
             if(tRestan == 0){
-                var estilo = document.getElementById("contador").innerHTML = 0;
-                estilo.style.color ="red";
+                document.getElementById("contador").innerHTML = 0;
+                var estilo = document.getElementById("contador");
+                estilo.style.color="red";
                 clearInterval(id);
             }
         }
