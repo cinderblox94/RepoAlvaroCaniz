@@ -6,25 +6,31 @@
     <title>Ej2</title>
     <script>
         var id;
-        var cont;
+        var tRestan;
         function iniciar(){
             var cuenta = document.querySelector('input').value;
             contar(cuenta);
         }
 
         function contar(num){
-            cont = num;
-             id = setInterval(imprimir(), 1000);
+            tRestan= num;
+            id = setInterval(imprimir(), 1000);
         }
+
         function imprimir(){
-            if(cont >= 0){
-                document.getElementById("contador").innerHTML = cont;
-                cont--;
+            if(tRestan > 0){
+                document.getElementById("contador").innerHTML = tRestan;
+                tRestan--;
             }
-            if(cont == 0){
+            if(tRestan == 0){
                 var estilo = document.getElementById("contador").innerHTML = 0;
                 estilo.style.color ="red";
+                clearInterval(id);
             }
+        }
+
+        function parar(){
+            clearInterval(id);
         }
     </script>
 
