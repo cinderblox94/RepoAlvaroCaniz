@@ -10,12 +10,7 @@ function main(){
        bloque.style.setProperty(orientacion, ((valor + (numpx*direccion) + "px")));
         console.log(parseInt(getComputedStyle(bloque).getPropertyValue(orientacion)));
     }
-   function izquierda(){
-       var numpx = document.getElementById("mov").value;
-        var valor = bloque.style.left;
-        console.log(valor);
-     bloque.style.left = (valor - numpx)+"px";
-     }
+  
 
     document.getElementById("right").addEventListener("click",() => mover("left",1));
     document.getElementById("left").addEventListener("click",() => mover("left",-1));
