@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 class WcBlink extends HTMLElement {
-    constructor(baseColor,alternativeColor,changeInterval){
+    constructor(){
          super();
-         //valores por defecto?
+         //valores por defecto?9
 
         var elemento = document.querySelector("wc-blink");
         
