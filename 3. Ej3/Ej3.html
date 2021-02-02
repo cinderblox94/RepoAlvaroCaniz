@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ej3</title>
+    <script type="text/javascript" src="my-jQuery.js"></script>
     <script>
-        var desaparece = document.getElementById("desaparece");
-        rojo.addEventListener("desaparece", invisible);
+        document.addEventListener("DOMContentLoaded",()=>{
 
-        function invisible (){
-                    }
-       
+            document.querySelector("#desaparece").addEventListener("click",()=>{
+               //este fadeOut es una función que he creado en el js
+                fadeOut(document.querySelector("#rojo"),1000);
+
+            })
+            document.querySelector("#aparece").addEventListener("click",()=>{
+                fadeIn(document.querySelector("#rojo", 1000));
+            })
+        })        
     </script>
     <style>
         div{
@@ -19,6 +25,7 @@
             border: 1px solid black;
             display: inline-block;
             background-color: red;
+            opacity: 1;
         }
        
         
