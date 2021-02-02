@@ -24,7 +24,6 @@ function fadeOut(elemento, tiempo){
 
 function fadeIn(elemento, tiempo){
     elemento.style.opacity = 0;
-
     var restante = null;
     
     function fade(timestamp){//timestamp es el tiempo transcurrido
