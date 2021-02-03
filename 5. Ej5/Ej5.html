@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej5</title>
+    <script type="text/javascript" src="jquery.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+
+            document.querySelector("#desaparece").addEventListener("click",()=>{
+               //este fadeOut es una función que he creado en el js
+                $("#rojo").fadeOut(2000);
+
+            })
+            document.querySelector("#aparece").addEventListener("click",()=>{
+                $("#rojo").fadeIn(2000);
+            })
+            document.querySelector("#encoge").addEventListener("click",()=>{
+               //este slideDown es una función que he creado en el js
+               $("#verde").slideUp(); 
+            })
+            document.querySelector("#crece").addEventListener("click",()=>{
+               $("#verde").slideDown();
+            })
+        })        
+    </script>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            background-color: red;
+            opacity: 1;
+        }
+       
+       #verde{
+           width: 200px;
+           height: 200px;
+           border: 1px solid black;
+           background-color: green;
+           display: none;
+       }
+        
+        
+    </style>
+   
+</head>
+<body>
+    <div id="rojo"></div>
+    <br>
+    <button id="desaparece"> FadeOut</button>
+    <button id="aparece"> FadeIn</button>
+    <br>
+    <div>
+        <div >Debajo crecerá un bloque nuevo</div>
+        <div id="verde"></div>
+    </div>
+    
+    <br>
+    <button id="encoge"> Encoger</button>
+    <button id="crece"> Crecer</button>
+</body>
+
+
+</html>
