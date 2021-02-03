@@ -26,8 +26,8 @@ function slideUp(elemento, tiempo){
 }
 
 function slideDown(elemento, tiempo){
-     alturaOriginal = parseInt(getComputedStyle(elemento).height);
-
+   //en este la primera sale de golpe pero despues funciona, problema con el display
+    elemento.style.display = "block";
     var restante = null;
     function slide(timestamp){
         if(!restante){
@@ -42,11 +42,11 @@ function slideDown(elemento, tiempo){
             elemento.style.height = alturaActual+"px";
         }
 
-        if(alturaActual <alturaOriginal){//si está creciendo ejecuta slide
+        if(alturaActual < alturaOriginal){//si está creciendo ejecuta slide
             requestAnimationFrame(slide);
-        }else{//si está con altura 0, fuerzo el formato original
+        }else{//si está con altura , fuerzo el formato original
             elemento.style.height = alturaOriginal + "px";
-            elemento.style.display = "none";
+           
         }
     }
     requestAnimationFrame(slide);
