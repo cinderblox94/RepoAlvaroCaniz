@@ -1,0 +1,47 @@
+html{
+    background-color: black;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ventana{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 80%;
+}
+#tutorial{
+    width: 40%;
+    height: 40%;
+    background-color:rgba(187, 99, 16, 0.678);
+    border: 3px solid rgb(187, 99, 16);
+    color: white;
+    text-align: center;
+    opacity: 1;
+    z-index: 1;
+    
+}
+#jugador{
+    background-image: url(img/pajaro.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 120px;
+    height: 80px;
+    position: absolute;
+    bottom: 50%;
+    left: 20%;
+}
+button{
+    display: block;
+    background-color: rgb(187, 99, 16);
+    text-decoration: none;
+    border-color: rgb(187, 99, 16);
+}
