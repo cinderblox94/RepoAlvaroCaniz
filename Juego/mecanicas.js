@@ -2,7 +2,7 @@ const TIEMPODESAPARECE = 1000;
 const TIEMPOSALTO = 300;
 const ALTURASALTADA = 200;
 const ALTURACAIDA = -150;
-const TIEMPOCAIDA = 1000;
+const TIEMPOCAIDA = 1000;// el ideal parece ser 500
 
 const TIEMPOTUBERIA =2000;
 
@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     
                 if(acumulado <tiempo){
                     requestAnimationFrame(animacion)
+                    //este es un  buen candidato a meter el comprobador
                 }else{
                     jugador.style.setProperty("bottom",(alturaActual + cantidad+"px"));
                     caida();
@@ -105,7 +106,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
         window.addEventListener("keydown",salto);
     }
 
+    //añadir en la función que más convenga una funcion de comprobar posición para ver si ha chocado
 
+    //añadir webcomponent que añada tuberias
+
+    //tener un random que llame al webcomponent con diferentes valores
+
+    //añadir contador de tuberias 
+
+    //añadir pantalla de muerte y reiniciar
     
     
     
