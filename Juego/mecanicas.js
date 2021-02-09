@@ -191,7 +191,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     
     //añadir pantalla de muerte y reiniciar
-    
+    //modificar pantalla inicio y fin
+    //eliminar borde imagen
     
     
     document.getElementById("botonTutorial").addEventListener("click",()=>{
