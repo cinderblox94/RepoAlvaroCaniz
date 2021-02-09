@@ -7,14 +7,14 @@ const TIEMPOCAIDA = 450;// el ideal parece ser 500
 const TIEMPOTUBERIA =1500;
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    var contador = 0;
     const ANCHURATUBERIA = parseInt(getComputedStyle(document.querySelector(".tuberia")).width);
     const DISTANCIATUBERIA = parseInt(getComputedStyle(document.querySelector("#ventana")).width) + ANCHURATUBERIA;
-    var comienzo = false;
-    var muerto = false;
     var jugador = document.querySelector("#jugador"); 
     var tuberias = [document.querySelector("#tAb1"),document.querySelector("#tAb2"),document.querySelector("#tAr1"),document.querySelector("#tAr2")];
     var displayContador = document.querySelector("#contador");
+    var comienzo = false;
+    var muerto = false;
+    var contador = 0;
 
     function randomTub(){
         var num = parseInt(Math.round(Math.random() * 3));
