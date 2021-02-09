@@ -1,4 +1,4 @@
-html{
+﻿html{
     background-color: black;
     height: 100%;
 }
@@ -18,7 +18,7 @@ body{
     background-image: url(img/fondo.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    /* overflow: hidden;       */
+    overflow: hidden;       
     width: 50%;
     height: 80%;
     max-height: 80%;
@@ -47,11 +47,12 @@ body{
     position: absolute;
     bottom: 50%;
     left: 20%;
+    border: 1px solid black;
 }
 .tuberia{
     width: 100px;
     height: 300px;
-    max-height: 30vh;
+    max-height: 20vh;
     background-size: 100% 100%;
     position: absolute;
     left: 100%;
