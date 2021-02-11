@@ -1,0 +1,14 @@
+div{
+    height: 500px;
+    width: 500px;
+    animation: animar 8s infinite;
+    background-image: url("foto1.jpg");
+    background-repeat: no-repeat;
+}
+ @keyframes animar {
+    0% { background-image: url("foto1.jpg");}
+    25% { background-image: url("foto2.jpg");}
+    50% { background-image: url("foto3.jpg");}
+    1000% { background-image: url("foto4.jpg");}
+} 
+
