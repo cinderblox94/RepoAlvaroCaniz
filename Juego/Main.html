@@ -10,9 +10,26 @@
 </head>
 <body>
     <div id="ventana">
-        <div id="tutorial">TExto de prueba que se editará más adelante
-            <button id="botonTutorial">Siguiente</button>
-        </div>
+            <div id="tutorial">
+                <p id="elem">Floppy Burd</p>
+                <template id="vivo">
+                    <p>Pulsa cualquier tecla para saltar</p>
+                </template>
+                <texto-inicio id="objetivo"></texto-inicio>
+
+                <template id="NoVivo">
+                    <style>
+                        p{
+                            color: red;
+                        }
+                    </style>
+                    <p>GAME OVER</p>
+                </template>
+                <texto-muerto></texto-muerto>
+
+                <button id="boton">Siguiente</button>
+            </div>
+        
         <div id="jugador"></div>
         <div id="contador">0</div>
         <div id="tAb1" class="tuberia abajo"></div>

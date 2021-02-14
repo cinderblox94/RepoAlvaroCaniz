@@ -10,6 +10,13 @@ body{
     max-height: 100%;
     margin: 0;
 }
+@font-face{
+    font-family: 'Pixel-Art';
+    src: url(recursos/PressStart2P-Regular.ttf);
+}
+*{
+    font-family: 'Pixel-Art';
+}
 #ventana{
     position: relative;
     display: flex;
@@ -47,7 +54,7 @@ body{
     position: absolute;
     bottom: 50%;
     left: 20%;
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 .tuberia{
     width: 100px;
@@ -86,4 +93,5 @@ button{
     text-decoration: none;
     border-color: rgb(187, 99, 16);
     width: 50%;
+    margin: 1rem ;
 }

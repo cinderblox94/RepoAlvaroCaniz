@@ -20,6 +20,38 @@ document.addEventListener("DOMContentLoaded", ()=>{
     var muerto = false;
     var contador = 0;
 
+    class textoInicio extends HTMLElement{
+        constructor(){
+            super();
+            var template = document.querySelector('#vivo').content;
+            var elem = template.cloneNode(true);
+            this.attachShadow({mode:'open'});
+            this.shadowRoot.appendChild(elem);
+        }
+    }
+    function pantallaMuerte(){
+        var textoAnterior = document.getElementById("objetivo");
+        var contenedor = textoAnterior.parentNode;
+        contenedor.removeChild(textoAnterior);
+
+        class textoMuerto extends HTMLElement{
+            constructor(){
+                super();
+                var template = document.querySelector('#NoVivo').content;
+                var elem = template.cloneNode(true);
+                this.attachShadow({mode:'open'});
+                this.shadowRoot.appendChild(elem);
+                this.shadowRoot.append("TOTAL: " + contador);
+            }
+        }
+        customElements.define('texto-muerto', textoMuerto);
+        
+    }
+    
+    
+    customElements.define('texto-inicio', textoInicio);
+   
+    
     function randomTub(){
         var num = parseInt(Math.round(Math.random() * 3));
         return num;
@@ -45,9 +77,10 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
         requestAnimationFrame(fade);
     }
-    function mostrar(){//parametrizar para usar con pantalla fin para reiniciar
+    function mostrar(){
+        
         var tutorial = document.querySelector("#tutorial");
-        tutorial.style.display = "block";
+        tutorial.style.display = "flex";
         tutorial.getElementsByClassName.opacity = 0;
         var restante = null;
 
@@ -66,17 +99,20 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
         requestAnimationFrame(fade);
     }
-   
+     
     //-------------JUEGO-------------------
     
     function iniciar(){
+        
         function salto(){
                 vuelo(ALTURASALTADA,TIEMPOSALTO);
                 if(muerto){
                     cancelAnimationFrame(animPajaro);
                     cancelAnimationFrame(animTuberias);
                     clearInterval(spawnTuberias);
+                    pantallaMuerte();
                     mostrar();
+                   
                 }
         }
         
@@ -94,7 +130,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 jugador.style.setProperty("bottom", (alturaActual + desplazado + "px"));
     
                 if(acumulado <tiempo){
-                    requestAnimationFrame(animacion)
+                    requestAnimationFrame(animacion);
                     
                 }else{
                     jugador.style.setProperty("bottom",(alturaActual + cantidad+"px"));
@@ -157,6 +193,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         
         if(!muerto)
             spawnTuberias = setInterval(movTuberia,DIFICULTAD);
+            setTimeout(()=>{
+
+            },1000);
 
         window.addEventListener("keydown",salto);
         
@@ -186,16 +225,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
         }
 
         
-    }
-
-
+    }   
     
-    //añadir pantalla de muerte y reiniciar
-    //modificar pantalla inicio y fin
-    //eliminar borde imagen
-    
-    
-    document.getElementById("botonTutorial").addEventListener("click",()=>{
+    document.getElementById("boton").addEventListener("click",()=>{
         ocultar();
         iniciar();
     });
