@@ -193,10 +193,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
         
         if(!muerto)
             spawnTuberias = setInterval(movTuberia,DIFICULTAD);
-            setTimeout(()=>{
-
-            },1000);
-
+            
         window.addEventListener("keydown",salto);
         
         function comprobar(tubo, arriba){
@@ -207,8 +204,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 if(((tamTubo.bottom>=tamjugador.top)&&
                     (tamTubo.left<=tamjugador.right))//
                     ){
-                        alert("arriba Tbot" + Math.round(tamTubo.bottom)+ "> Jtop" + Math.round(tamjugador.top)+ " y " +
-                        "Tleft" + Math.round(tamTubo.left)+ "< Jrig" + Math.round(tamjugador.right));
+                        //COMPROBADOR DE COORDENADAS
+                        // alert("arriba Tbot" + Math.round(tamTubo.bottom)+ "> Jtop" + Math.round(tamjugador.top)+ " y " +
+                        // "Tleft" + Math.round(tamTubo.left)+ "< Jrig" + Math.round(tamjugador.right));
                         muerto = true;
 
                 }
@@ -216,8 +214,9 @@ document.addEventListener("DOMContentLoaded", ()=>{
                 if(((tamTubo.top<=tamjugador.bottom)&&
                     (tamTubo.left<=tamjugador.right))//
                     ){
-                        alert("abajo Ttop" + Math.round(tamTubo.top)+ "< Jbottom" + Math.round(tamjugador.bottom)+ " y " +
-                        "Tleft" + Math.round(tamTubo.left)+ "< Jrig" + Math.round(tamjugador.right));
+                            //COMPROBADOR DE COORDENADAS
+                        // alert("abajo Ttop" + Math.round(tamTubo.top)+ "< Jbottom" + Math.round(tamjugador.bottom)+ " y " +
+                        // "Tleft" + Math.round(tamTubo.left)+ "< Jrig" + Math.round(tamjugador.right));
                         muerto = true;
                 }    
             }
