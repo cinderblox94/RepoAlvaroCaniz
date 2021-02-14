@@ -73,6 +73,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
             }else{
                 tutorial.style.opacity = 0;
                 tutorial.style.display = "none";
+                var boton = document.getElementById("boton");
+                boton.style.opacity = 0;
             }
         };
         requestAnimationFrame(fade);
