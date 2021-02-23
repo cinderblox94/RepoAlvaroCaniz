@@ -68,16 +68,16 @@ form{
     height: 2rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     z-index:2;
 }
 .menu div{
     display: flex;
-    width: 100%;
+    width: 90%;
     list-style-type: none;
     font-weight: bold;
     justify-content: space-around;
-    margin-right: 1rem;
-    margin-left: 1rem;
+    
 }
 .menu div div{
     padding: 5px;
@@ -85,6 +85,8 @@ form{
     width: 100%;
     display: flex;
     align-content: center;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 span{
     color: inherit;
@@ -92,7 +94,6 @@ span{
 }
 .menu div div .nivel2{
    position: absolute;
-   
    padding: 0.5rem;
    padding-top: 1rem;
    top: 0;
@@ -103,6 +104,8 @@ span{
    background: linear-gradient(180deg, rgba(186,248,70,1) 14%, rgba(151,201,56,1) 42%);
    width: 100%;
    color: transparent;
+   display: flex;
+   justify-content: center;
    transition: height 2s, color 1s;
 }
 .menu div div .nivel2:hover{/*destino*/
@@ -360,6 +363,8 @@ footer{
       flex-wrap: wrap;
       height: fit-content;
       width: 100%;
+      position: sticky;
+      top: 0;
   }
   
   .cabecera form{
@@ -377,32 +382,43 @@ footer{
       margin: 0;
   }
   .menu{
-      height: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 8.5rem;
       width: 100%;
   }
   span{
       z-index: 2;
-      margin: auto;
+      margin: 0;
   }
   .menu div{
       flex-direction: column;
       align-items: center;
-      width: 100%;
+      height: fit-content;
+      max-width: 100%;
+      margin: 0;
   }
   .menu div div{
-      width: 100%;
+      max-width: 100%;
+      margin: 0;
   }
   .menu div div .nivel2{
       z-index: 1;
-      width: 50%;
-      left:25%;      
+      max-width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+           
   }
   .menu div div .nivel2 ul{
-    width: 100%;
     margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
 }
   .menu div div .nivel2 ul li{
-    width: 100%;
+    max-width: 100%;
+    margin: 0;
   }
   aside{
       width: 100%;
@@ -414,11 +430,9 @@ footer{
       height: fit-content;
   }
   .concurso{
-      height: 10rem;
+      height: 15em;
   }
-  .cartel{
-      
-  }
+  
   section{
       width: 100%;
   }
@@ -441,6 +455,7 @@ footer{
     .enlaces div{
         margin-bottom: 1rem;
     }
+    
     
 }
 
