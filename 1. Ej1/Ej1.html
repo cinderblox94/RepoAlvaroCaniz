@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej1</title>
+</head>
+<body>
+    <div id="contenedor">
+        <picture>
+            <source media="(min-width:1200px)" srcset="imagen-w1200.webp,
+                                                        imagen-w1200.jpg,
+                                                        imagen-w1600.jpg w1600">
+            <source media="(min-width:800px)" srcset="imagen-w800.webp, imagen-w800.jpg">
+            <source media="(max-width:800px" srcset="imagen-w600.webp">
+            <img src="imagen-w600.jpg">
+        </picture>
+    </div>
+</body>
+</html>
