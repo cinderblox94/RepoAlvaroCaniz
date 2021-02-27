@@ -41,7 +41,7 @@ form{
     width: 50%;
     margin: 1rem;
 }
-#form{
+#form, #form2{
     width: 100%;
     font-size: 0.7rem;
     text-align: right;

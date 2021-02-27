@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Practica3.css">
+    <link rel="stylesheet" href="Practica5.css">
     <title>Practica 5</title>
+    <!--NOTA: En los códigos de errores de validación relativos a la falta de un href en los anchor, solo he indicado en los contenedores, dado que sino se repetiría en exceso -->
 </head>
 <body>
     <header>
         <div class="cabecera">
             <div class="logo">
                 <picture> <!-- los nº2 son fotos a mayor dpi -->
-                    <source media=" (min-width:1200px) " sizes="50vw" srcset="img/logo-g.png 1199w,
+                    <source media="(min-width:1200px)" sizes="50vw" srcset="img/logo-g.png 1199w,
                                                                 img/logo-g2.png 2400w">
 
-                    <source media=" (min-width:768px) " sizes="50vw" srcset="img/logo-m.png 767w,
+                    <source media="(min-width:768px)" sizes="50vw" srcset="img/logo-m.png 767w,
                                                                 img/logo-m2.png 1534w">
 
                     <img src="img/logo-s.png" alt="logo pagina"
@@ -25,20 +26,26 @@
                     <source type="image/webp" srcset="img/logo-m.webp">
                 </picture>
             </div>
-            <form>
+            <form><!--Error de validación WCAG2 4.1.1 Id duplicado , cambio el de la linea ~103 a form2,
+                 también sale error WCAG2 3.2.2, que hace referencia a que falta el botón de submit, 
+                 sin embargo por motivos de simplifación del ejercicio no lo he metido, en su lugar con 
+                 JS haría un listener a presionar intro cuando se escriba en el buscador-->
                 <input type="text" id="form" value="Búsqueda">
             </form>
             <div class="usuario">
-                <img src=img/usuario.png>
+                <!--Error WCAG2 1.1.1(A), falta alt-->
+                <img src=img/usuario.png alt="icono usuario">
                 <a href="">Usuario</a>
             </div>
             <div class="cesta">
-                <img src=img/cesta.png>
+                <!--Error WCAG2 1.1.1(A), falta alt-->
+                <img src=img/cesta.png alt="icono cesta">
                 <a href="">3</a>
             </div>
         </div>
         <div class="menu">
             <div>
+                <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <div><a href=""></a>
                     <span>OFICINA</span>
                     <div class="nivel2">
@@ -49,6 +56,7 @@
                         </ul>
                     </div>
                 </div>
+                 <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <div><a href=""></a>
                     <span>ESCUELA</span>
                     <div class="nivel2">
@@ -59,6 +67,7 @@
                         </ul>
                     </div>
                 </div>
+                 <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <div><a href=""></a>
                     <span>IMPRESORAS</span>
                     <div class="nivel2">
@@ -69,6 +78,7 @@
                         </ul>
                     </div>
                 </div>
+                 <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <div><a href=""></a>
                     <span>RECAMBIOS</span>
                     <div class="nivel2" >
@@ -79,6 +89,7 @@
                         </ul>
                     </div>
                 </div>
+                 <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <div><a href=""></a>
                     <span>COPISTERÍA</span>
                     <div class="nivel2">
@@ -97,7 +108,8 @@
         <div class="lado">
             <div>LOCALIZA TU TIENDA MÁS CERCANA</div>
             <form>
-                <input type="text" id="form" value="CÓDIGO POSTAL">
+                <!--Error WCAG2 Falta boton submit, razón en comentario, linea ~28-->
+                <input type="text" id="form2" value="CÓDIGO POSTAL">
             </form>
             <div class="mapa"></div>
             <div>
@@ -132,11 +144,13 @@
                         </video>
                 </div>
                 <div class="anuncio">
-                        <iframe src="https://www.youtube.com/embed?listType=playlist&playlist=2lnnwQ0o2NM&loop=1&controls=2"></iframe>
+                        <!--Error WCAG2 4.1.2 Falta título -->
+                        <iframe src="https://www.youtube.com/embed?listType=playlist&playlist=2lnnwQ0o2NM&loop=1&controls=2" title="video2"></iframe>
                 </div>
                 
             </div>
             <div class="exposicion">
+                <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                <a href="">Destacado</a> 
                <div class="principal">
                    <div><a href=""></a></div>
@@ -156,6 +170,7 @@
             <br>
             <br>
             <div class="exposicion">
+                <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                 <a href="">Básico</a> 
                 <div class="principal">
                     <div><a href=""></a></div>
@@ -180,6 +195,7 @@
             <div class="logo2"></div>
             <div class="enlaces">
                 <div>
+                    <!--Error WCAG2 1.1.1/2.4.4/2.4.9 (A/AAA) Falta dirección de link, no se ha metido para simplificar -->
                     <a href="">Empresa</a>
                     <a href="">Condiciones de compra</a>
                     <a href="">Política de privacidad</a>
