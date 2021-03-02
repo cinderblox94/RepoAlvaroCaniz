@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ej3</title>
+</head>
+<body>
+    <audio id="cancion" autoplay controls>
+        <source src="sonidos/cancion.mp3" type="audio/mpeg3">
+        <source src="sonidos/cancion.ogg" type="audio/ogg">
+
+    </audio>
+    <div>
+        <button onclick="document.getElementById('cancion').play()">Play</button>
+        <button onclick="document.getElementById('cancion').pause()">Pause</button>  
+        <button onclick="document.getElementById('cancion').volume +=0.1">+VOL</button> 
+        <button onclick="document.getElementById('cancion').volume -=0.1">-VOL</button> 
+    
+    </div>
+</body>
+</html>
