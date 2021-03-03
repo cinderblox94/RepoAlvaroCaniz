@@ -1,0 +1,35 @@
+#contenedor{
+    position: relative;
+    height: 45rem;
+    width:45rem;
+    border: 1px solid black;
+}
+.cuadrado{
+    box-sizing: border-box;
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    margin: 1rem;
+    font-size: 1rem;
+    background-color: red;
+    transition: 4s all;
+    left: 0px;
+}
+#c1{
+    top:0rem;
+}
+#c2{
+    top: 11rem;
+}
+#c3{
+    top: 22rem;
+}
+#c4{
+    top:33rem;
+}
+.cuadrado:hover{
+    transform: scale(0.5) rotate(270deg);
+    background-color: blue;
+    color: yellow;
+    font-size: 1.5rem;
+}
