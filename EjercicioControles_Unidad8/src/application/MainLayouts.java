@@ -4,15 +4,20 @@ import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.layout.BorderPane;
+import javafx.fxml.FXMLLoader;
 
 
 public class MainLayouts extends Application {
+	private BorderPane rootLayout;
 	@Override
 	public void start(Stage primaryStage) {
 		try {
-			BorderPane root = new BorderPane();
-			Scene scene = new Scene(root,400,400);
-			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
+			FXMLLoader loader = new FXMLLoader();
+			loader.setLocation(MainLayouts.class.getResource("MainLayouts.fxml"));
+			rootLayout = (BorderPane) loader.load();
+			
+			
+			Scene scene = new Scene(rootLayout);
 			primaryStage.setScene(scene);
 			primaryStage.show();
 		} catch(Exception e) {

@@ -191,7 +191,7 @@
                </children>
             </HBox>
             <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
-            <ChoiceBox fx:id="locationCombo" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <ChoiceBox fx:id="locationCombo" prefWidth="150.0" value="Select a value:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
          <opaqueInsets>
             <Insets right="10.0" />
