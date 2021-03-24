@@ -190,7 +190,7 @@
                   <CheckBox indeterminate="true" mnemonicParsing="false" text="Electron" />
                </children>
             </HBox>
-            <ListView prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <ListView fx:id="lista" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
             <ChoiceBox fx:id="locationCombo" prefWidth="150.0" value="Select a value:" GridPane.columnIndex="1" GridPane.rowIndex="6" />
          </children>
          <opaqueInsets>
