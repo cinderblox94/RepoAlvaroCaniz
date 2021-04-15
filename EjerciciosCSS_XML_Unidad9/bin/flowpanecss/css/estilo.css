@@ -1,0 +1,11 @@
+#boton1{
+	-fx-padding: 20;
+}
+#boton2{
+	-fx-background-insets: 5;
+}
+
+FlowPane{
+	-fx-pref-height: 200;
+	-fx-pref-width: 272;
+}
