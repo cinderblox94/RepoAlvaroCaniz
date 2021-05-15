@@ -1,0 +1,48 @@
+.root{
+	-fx-font-size: 15px;
+}
+
+#header{
+	-fx-font-size:20px;
+	-fx-background-color: #008080, derive(blue, 70%);
+	-fx-background-insets:0, 10;
+	-fx-background-radius:0, 15;
+	-fx-padding: 15px, 20px;
+	-fx-pref-height: 35px;
+	
+}
+#header Label{
+	-fx-text-fill: #FFFFFF;
+}
+#account{
+	-fx-background-image: url("javafx_account_example.jpg");
+	-fx-background-repeat: no-repeat ;
+	-fx-background-size: 25px;
+	-fx-padding: 10 0 10 30;
+	-fx-background-position: left center;
+}
+#sidebar{
+    -fx-pref-width: 200px;
+    
+}
+#sidebar Label{
+	-fx-pref-height: 20px;
+	-fx-pref-width: 200px; 
+	-fx-border-width: 1;
+    -fx-border-color:#E8E8E8;
+    -fx-padding:10px;
+}
+#centro{
+	-fx-padding:15px;
+	
+}
+#content{
+	-fx-font-weight: bold;
+}
+#texto{
+	-fx-wrap-text: true;
+	-fx-pref-width: 500px;
+}
+#fondo{
+	-fx-padding: 10px;
+}
