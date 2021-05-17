@@ -1,0 +1,51 @@
+*{
+	-fx-background-color: #3c3b3b;
+	-fx-text-fill: #ffffff;
+}
+#details{
+	-fx-font-size: 40px;
+}
+
+.split-pane:horizontal > .split-pane-divider {
+    -fx-border-color: transparent #383838 transparent #383838;
+    -fx-background-color:#5B5B5B;
+}
+.etiqueta{
+	-fx-text-fill:#8a8a8a;
+	-fx-font-weight: bold;
+	-fx-font-size:14px;
+}
+.valor{
+	-fx-font-size: 14px;
+}
+.button{
+	-fx-pref-width: 70px;
+	-fx-border-color: #ffffff;
+	-fx-border-width: 2px;
+}
+.button:hover{
+	-fx-background-color: #5b5b5b;
+}
+/*BARRA MENU */
+MenuBar, MenuBar *{
+	-fx-background-color: #5b5b5b;
+	-fx-font-size:14px;
+}
+.menu:hover{
+	-fx-background-color: -fx-focus-color;
+}
+.menu MenuItem{
+	-fx-background-color: transparent;
+}
+
+.table-row, .table-cell{
+	-fx-border-color: transparent;
+} 
+.table-view:focused .table-row-cell:filled:focused:selected {
+    -fx-background-color: -fx-focus-color;
+}
+.table-view:hover .table-row-cell:hover{
+	-fx-background-color: -fx-focus-color;
+}
+
+
