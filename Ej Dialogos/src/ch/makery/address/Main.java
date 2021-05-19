@@ -135,7 +135,7 @@ public class Main extends Application {
 			
 			//Configuro las características de esa ventana
 			Stage stage = new Stage();
-			stage.setTitle("Crear o editar persona");
+			stage.setTitle("Crear persona");
 			stage.initModality(Modality.WINDOW_MODAL);
 			stage.initOwner(primaryStage);
 			Scene scene = new Scene(nueva);
@@ -154,7 +154,31 @@ public class Main extends Application {
 		}
 	}
 		
+	public void abrirEditar(Person persona) {
+		 try {
+			FXMLLoader loader = new FXMLLoader();
+	        loader.setLocation(Main.class.getResource("view/New.fxml"));
+	        AnchorPane page = (AnchorPane) loader.load();
 	
+	        Stage dialogStage = new Stage();
+	        dialogStage.setTitle("Editar persona");
+	        dialogStage.initModality(Modality.WINDOW_MODAL);
+	        dialogStage.initOwner(primaryStage);
+	        Scene scene = new Scene(page);
+	        dialogStage.setScene(scene);
+	
+	        ControladorNew controlador = loader.getController();
+	        controlador.setDialogStage(dialogStage);
+	        controlador.setPerson(persona);
+	
+	        dialogStage.showAndWait();
+	
+	    
+		 } catch (IOException e) {
+			 e.printStackTrace(); 
+    
+		 }
+	}
 
 	
 	

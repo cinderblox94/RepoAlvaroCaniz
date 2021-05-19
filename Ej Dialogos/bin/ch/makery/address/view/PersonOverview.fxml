@@ -63,7 +63,7 @@
                      <children>
                         <Button mnemonicParsing="false" onAction="#dialogo" text="New..." />
                         <Button mnemonicParsing="false" onAction="#dialogo2" text="Edit..." />
-                        <Button mnemonicParsing="false" text="Delete" />
+                        <Button mnemonicParsing="false" onAction="#dialogo3" text="Delete" />
                      </children>
                   </HBox>
                </children>
