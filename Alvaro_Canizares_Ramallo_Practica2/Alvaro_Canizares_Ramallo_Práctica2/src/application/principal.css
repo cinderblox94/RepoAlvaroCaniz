@@ -1,0 +1,10 @@
+AnchorPane{
+	-fx-padding: 10px;
+}
+Vbox{
+	-fx-pref-height: 50px;
+}
+#texto{
+	-fx-font-size: 25px;
+	-fx-alignment: center;
+}

@@ -1,0 +1,12 @@
+*{
+	-fx-padding: 15px; 
+	-fx-font-family: serif;
+	-fx-font-size: 15px;
+}
+#buscar{
+	-fx-underline: true;
+	-fx-border-insets: 0.0 0.0 0.0 10px;
+}
+TilePane{
+	-fx-padding: 15px 0px 15px 90px;
+}

@@ -1,0 +1,11 @@
+AnchorPane{
+	-fx-background-color: #DEE561;
+}
+#faq{
+	-fx-font-size: 30px;
+	-fx-font-weight: bold;
+}
+TreeView{
+	-fx-pref-width: 400px;
+	
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane prefHeight="500.0" prefWidth="700.0" stylesheets="@principal.css" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controlador">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" onAction="#abrirPantalla2" text="Inicio">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#abrirPantalla2" text="Abrir" />
+              <MenuItem mnemonicParsing="false" onAction="#cerrarPantalla" text="Cerrar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Modificar">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirPantalla3" text="Modificar" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#abrirPantalla4" text="Guía" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Text id="texto" strokeType="OUTSIDE" strokeWidth="0.0" text="Pantalla principal" />
+         </children>
+      </VBox>
+   </center>
+</BorderPane>
