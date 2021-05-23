@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch4jConfig>
+  <dontWrapJar>false</dontWrapJar>
+  <headerType>gui</headerType>
+  <jar>C:\Users\Zeus\Documents\GitHub\RepoAlvaroCaniz\AlvaroCanizares_Ramallo_practica2.jar</jar>
+  <outfile>C:\Users\Zeus\Documents\GitHub\RepoAlvaroCaniz\AlvaroCanizares_Ramallo_practica2.exe</outfile>
+  <errTitle></errTitle>
+  <cmdLine></cmdLine>
+  <chdir>.</chdir>
+  <priority>normal</priority>
+  <downloadUrl>http://java.com/download</downloadUrl>
+  <supportUrl></supportUrl>
+  <stayAlive>false</stayAlive>
+  <restartOnCrash>false</restartOnCrash>
+  <manifest></manifest>
+  <icon>C:\Users\Zeus\Google Drive\Desarrollo\Desarrollo de Interfaces\Tema 10\Soluciones\EjercicioFX_Unidad10\src\img\img.ico</icon>
+  <jre>
+    <path>bin\jre</path>
+    <bundledJre64Bit>false</bundledJre64Bit>
+    <bundledJreAsFallback>false</bundledJreAsFallback>
+    <minVersion></minVersion>
+    <maxVersion></maxVersion>
+    <jdkPreference>preferJre</jdkPreference>
+    <runtimeBits>64/32</runtimeBits>
+    <opt>--module-path &quot;javafx-sdk-15\lib&quot; --add-modules=javafx.controls,javafx.fxml</opt>
+  </jre>
+</launch4jConfig>
