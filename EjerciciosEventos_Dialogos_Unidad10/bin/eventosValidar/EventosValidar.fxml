@@ -7,15 +7,15 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox alignment="CENTER" prefHeight="100.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" prefHeight="100.0" prefWidth="326.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="45.0" prefWidth="200.0" spacing="2.0">
          <children>
             <Label text="Label: " />
-            <TextField fx:id="txtResultado" prefHeight="25.0" prefWidth="248.0" />
+            <TextField fx:id="input" prefHeight="25.0" prefWidth="248.0" />
          </children>
       </HBox>
-      <Button fx:id="btnMostrar" mnemonicParsing="false" text="Mostrar diálogo">
+      <Button fx:id="bMostrar" mnemonicParsing="false" text="Mostrar diálogo">
          <VBox.margin>
             <Insets top="10.0" />
          </VBox.margin>

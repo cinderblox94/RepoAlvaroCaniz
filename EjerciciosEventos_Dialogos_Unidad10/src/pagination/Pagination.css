@@ -1,0 +1,6 @@
+.pagination{
+	-fx-border-color: black;
+}
+.pagination .page .label{
+	-fx-border-color:black;
+}
